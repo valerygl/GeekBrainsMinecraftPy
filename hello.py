@@ -1,3 +1,3 @@
-name = input('enter your name ')
-surname = input("enter your surname ")
+name = input('Введите своё имя ')
+surname = input("Введите свою фамилию ")
 print(name, surname)
