@@ -2,25 +2,36 @@ import time
 from mcpi.minecraft import Minecraft
 
 mc = Minecraft.create()
-x = 2000
-y = 10
-z = 2000
 
-time.sleep(15)  # пауза на 15 секунд, чтобы успеть переключиться в майнкрафт
-mc.player.setTilePos(x, y, z)  # телепорт в координаты x, y, z
+time.sleep(8)
 
-a, b, c = mc.player.getPos()  # записываем в переменные a, b, c текущее положение игрока.
-# интересно, совпадут ли эти координаты с теми, в которые игрок был телепортирован и с теми, которые на экране майнкрафта?
+x = 658.5
+y = 24.5
+z = 140.5
+mc.player.setPos(x, y, z)
+mc.postToChat(f"{x} {y} {z}")
 
-print(a, b, c)
+time.sleep(3)
 
-time.sleep(10)  # пауза на 10 секунд и еще раз то же самое
+x = 293.5
+y = 293.5
+z = 928.5
+mc.player.setPos(x, y, z)
+mc.postToChat(f"{x} {y} {z}")
 
+time.sleep(3)
 
-x = 4000
-y = 10
-z = 4000
-mc.player.setTilePos(x, y, z)
+x = 928.5
+y = 19.5
+z = 284.5
+mc.player.setPos(x, y, z)
+mc.postToChat(f"{x} {y} {z}")
 
-a, b, c = mc.player.getPos()
-print(a, b, c)
+time.sleep(3)
+
+x = 300.5
+y = 394.5
+z = 155.5
+mc.player.setPos(x, y, z)
+mc.postToChat(f"{x} {y} {z}")
+print('done!')
