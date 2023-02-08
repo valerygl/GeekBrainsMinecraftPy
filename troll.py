@@ -11,12 +11,15 @@ block = int(block_str) # преобразуем строку в целое чи�
 
 
 time.sleep(8)
-mc.setBlock(x - 1,  y - 1 , z, block)
-mc.setBlock(x - 1, y - 1, z - 1, block)
-mc.setBlock(x - 1, y - 1, z + 1, block)
-mc.setBlock(x + 1, y - 1, z, block)
-mc.setBlock(x + 1,  y - 1, z + 1, block)
-mc.setBlock(x + 1, y - 1, z - 1, block)
-mc.setBlock(x, y - 1, z, block)
-mc.setBlock(x, y - 1, z - 1, block)
-mc.setBlock(x, y - 1, z + 1, block)
+# mc.setBlock(x - 1,  y - 1 , z, block)
+# mc.setBlock(x - 1, y - 1, z - 1, block)
+# mc.setBlock(x - 1, y - 1, z + 1, block)
+# mc.setBlock(x + 1, y - 1, z, block)
+# mc.setBlock(x + 1,  y - 1, z + 1, block)
+# mc.setBlock(x + 1, y - 1, z - 1, block)
+# mc.setBlock(x, y - 1, z, block)
+# mc.setBlock(x, y - 1, z - 1, block)
+# mc.setBlock(x, y - 1, z + 1, block)
+
+size = 2
+mc.setBlocks(x - size, y - 1, z - size, x + size, y - 1, z + size, block)
