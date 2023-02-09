@@ -8,8 +8,11 @@ x, y, z = mc.player.getTilePos()
 block_type = mc.getBlock(x, y, z)
 
 water = 8
+in_water = block_type == water
 
-if block_type == water:
+
+if in_water:
     mc.postToChat("игрок в воде")
 else:
-    mc.postToChat("игрок НЕ в воде, он тут: ", block_type)
+    mc.postToChat("игрок не в воде, он тут: ")
+    mc.postToChat(block_type)
