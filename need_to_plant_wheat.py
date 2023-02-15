@@ -16,17 +16,8 @@ type1 = mc.getBlock(x1, y1, z1)
 
 type2 = mc.getBlock(x2, y2, z2)
 
-if type1 == wheat and type2 == wheat:
-    mc.postToChat("тут и там пшеница")
-
 
 if type1 != wheat and type2 != wheat:
     mc.postToChat("тут и там нет пшеницы, надо посадить")
-
-if type1 == wheat and type2 != wheat:
-    mc.postToChat("не нужно сажать пшеницу")
-
-
-
-if type1 != wheat and type2 == wheat:
-    mc.postToChat("не нужно сажать пшеницу")
+else:
+    mc.postToChat("где- то пшеница уже есть")
