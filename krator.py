@@ -1,3 +1,4 @@
+import random
 import time
 
 from mcpi.minecraft import Minecraft
@@ -7,7 +8,7 @@ mc = Minecraft.create()
 x, y, z = mc.player.getTilePos()
 
 
-answer = input("создать кратор? y/n")
+answer = input("создать кратор? y/n ")
 time.sleep(10)
 
 if answer == "y":
@@ -16,5 +17,7 @@ if answer == "y":
     mc.postToChat("бу бах")
     print("Crater")
 else:
-    mc.player.setPos(x + 20, y + 4, z + 20)
+    x += random.randint(-100, 100)
+    z += random.randint(-100, 100)
+    mc.player.setPos(x , y + 10, z )
     print("teleport")
