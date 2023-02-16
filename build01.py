@@ -13,7 +13,7 @@ def build_floor(data,floor,x,y,z,length,width):
             block_data = data[j*length+i].split('-')
             main_id_block = int(block_data[0])
             second_id_block = int(block_data[1])
-            print(main_id_block,second_id_block, end=' ')
+            print(main_id_block,second_id_block, end =' ')
             #Строим блок в мире майнкрафт
             mc.setBlock(i+x, floor+y-1, j+z, main_id_block, second_id_block)
             #Считаем количество использованны блоков
