@@ -1,12 +1,17 @@
+import random
 import time
 from mcpi.minecraft import Minecraft
 
 mc = Minecraft.create()
 # за 15 сек нужно успеть 3 раза тыкнуть .мечом по блокам правой кнопкой
 time.sleep(5)
-x = 658.5
-y = 67
-z = 140.5
+
+x = random.randint(1, 1000)
+x = random.randint(1, 1000)
+y = random.randint(1, 100)
+
+
+
 mc.player.setPos(x, y, z)
 time.sleep(30)
 block_hits = mc.events.pollBlockHits()
