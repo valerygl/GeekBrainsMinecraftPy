@@ -4,10 +4,10 @@ import time
 
 mc = Minecraft.create()
 
-p = 2
-a = 0
-b = 1
-o = 86
+p = 72 # розовый
+a = 0 # воздух
+b = 4 # белый блок
+o = 86 # оранжевый
 
 
 pixel_list = [
@@ -44,14 +44,15 @@ pixel_list = [
 ]
 
 
-
+time.sleep(4)
 
 x, y, z = mc.player.getTilePos()
 x_start = x
+y = y + len(pixel_list)
 
 for row in pixel_list:
     for block in row:
         mc.setBlock(x, y, z, block)
         x += 1
-    y += 1
+    y -= 1
     x = x_start
