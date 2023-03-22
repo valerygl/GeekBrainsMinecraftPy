@@ -8,8 +8,8 @@ time.sleep(8)
 x, y, z = mc.player.getTilePos()
 
 length = 5
-height = 6
-width = 7
+height = 5
+width = 5
 block = 4
 
 mc.setBlocks(x, y, z, x + length, y + height, z + width, block)

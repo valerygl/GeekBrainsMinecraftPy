@@ -31,9 +31,9 @@ time.sleep(20)
 
 
 
-x = -655
-y =63
-z =838
+x = - 655
+y = 63
+z = 838
 mc.player.setPos(x, y, z)
 # mc.postToChat(f"{x} {y} {z}")
 mc.postToChat("это океан в нем ооооочень мноогооо воды. также можешь найти подводный храм")
