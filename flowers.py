@@ -4,5 +4,5 @@ import time
 
 while True:
     x, y, z = mc.player.getTilePos()
-    mc.setBlock(x, y - 1, z, 1)
-    time.sleep(3)
+    mc.setBlock(x, y - 1, z, 46)
+    time.sleep(0.0000000001)
