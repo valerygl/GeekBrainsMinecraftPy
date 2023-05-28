@@ -1,8 +1,8 @@
+
 import time
 import random
 from mcpi.minecraft import Minecraft
 mc=Minecraft.create()
-
 
 def put(id):
     x, y, z = mc.player.getTilePos()
