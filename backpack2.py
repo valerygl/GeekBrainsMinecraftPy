@@ -6,6 +6,8 @@ mc = Minecraft.create()
 # за 15 сек нужно успеть 3 раза тыкнуть .мечом по блокам правой кнопкой
 time.sleep(5)
 
+
+x, y, z = mc.player.getTilePos()
 x = random.randint(1, 1000)
 x = random.randint(1, 1000)
 y = random.randint(1, 100)
