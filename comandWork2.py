@@ -2,7 +2,7 @@ import random
 
 from mcpi.minecraft import Minecraft
 import time
-mc = Minecraft.create()
+mc = Minecraft.create(  )
 
 
 
