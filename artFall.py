@@ -5,18 +5,18 @@ import time
 mc = Minecraft.create()
 
 p = 237
-m = 37
+m = 12 # желтая кожа
 q = 20
 l = 4
 k = 129
 h = 231
 o = 234
-f = 99
+f = 5 # коричневая кожа
 e = 87
 d = 39
 c = 225
-b = 111
-a = 0
+b = 10 # красный динамит
+a = 80 # белое
 
 pixel_list = [
     [a, a ,a ,a ,a ,a ,a ,a ,a ,a ,a ,a ,a ,a ,d ,a ,a ,a ,a ,a ,a ,a ,a ,a ,a ,a ,a ,a, a],
@@ -59,11 +59,13 @@ pixel_list = [
 x, y, z = mc.player.getTilePos()
 x_start = x
 
+y = y + 33
+
 for row in pixel_list:
     for block in row:
         mc.setBlock(x, y, z, block)
         x += 1
-    y += 1
+    y -= 1
     x = x_start
 
 
