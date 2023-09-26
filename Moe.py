@@ -1,5 +1,7 @@
-from mcpi.minecraft import Minecraft
 import time
+
+from mcpi.minecraft import Minecraft
+
 mc = Minecraft.create()
 
 
